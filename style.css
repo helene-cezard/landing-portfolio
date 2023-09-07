@@ -14,13 +14,13 @@ header {
 }
 
 .section > * {
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 
 .section-title {
   font-size: 2rem;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
   text-align: center;
 }
 
@@ -33,6 +33,11 @@ header {
   background-color: #4CC9F0;
 }
 
+.section:first-child {
+  background-color: white;
+  color: black;
+}
+
 .navbar {
   font-size: 1.2rem;
   margin: auto;
@@ -42,13 +47,23 @@ header {
   padding: .5rem;
 }
 
-.navbar a {
+.navbar__links {
   text-decoration-line: none;
   color: white;
 }
 
-.navbar a:visited {
+.navbar__links:visited {
   color: white;
+}
+
+.introduction {
+  padding: 2rem 0 2rem 0;
+}
+
+.name {
+  text-align: center;
+  font-size: 4rem;
+  padding: 1rem;
 }
 
 .photo {
@@ -56,4 +71,87 @@ header {
   display: block;
   margin: 1rem auto 1rem auto;
   border-radius: 50%;
+}
+
+.job {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.job__title {
+  margin: 1rem;
+}
+
+.job__resume {
+  border-radius: 4px;
+  background-color: #3A0CA3;
+  border: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.job__resume:hover {
+  background-color: #4CC9F0;
+}
+
+.journey__card {
+  width: 80%;
+  padding: 1rem;
+  background-color: #F72585;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+.journey__title {
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+  font-weight: bold;
+}
+
+.projects__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__card {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  border: #7209B7 1px solid;
+  border-radius: 4px;
+  background-color: #7209B7;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.projects__title {
+  padding: .5rem;
+}
+
+.projects__illustration {
+  width: 100%;
+}
+
+.projects__description {
+  margin: 1.5rem auto;
+  text-align: justify;
+}
+
+.links__elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links__item {
+  text-decoration-line: none;
+  color: white;
+  font-size: 5rem;
+  margin: 1rem;
 }

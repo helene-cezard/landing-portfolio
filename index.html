@@ -10,11 +10,11 @@
 <body>
   <header>
     <ul class="navbar">
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#about">À propos de moi</a></li>
-      <li><a href="#journey">Parcours</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#links">Liens</a></li>
+      <li><a class="navbar__links" href="#introduction">Introduction</a></li>
+      <li><a class="navbar__links" href="#about">À propos de moi</a></li>
+      <li><a class="navbar__links" href="#journey">Parcours</a></li>
+      <li><a class="navbar__links" href="#projects">Projets</a></li>
+      <li><a class="navbar__links" href="#links">Liens</a></li>
     </ul>
   </header>
   <main>
@@ -36,15 +36,15 @@
       <h2 class="section-title">Parcours</h2>
       <div class="journey__content">
         <div class="journey__card">
-          <h3>Date</h3>
+          <h3 class="journey__title">Date</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, ea?</p>
         </div>
         <div class="journey__card">
-          <h3>Date</h3>
+          <h3 class="journey__title">Date</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, ea?</p>
         </div>
         <div class="journey__card">
-          <h3>Date</h3>
+          <h3 class="journey__title">Date</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, ea?</p>
         </div>
       </div>
@@ -54,27 +54,29 @@
       <div class="projects__container">
         <div class="projects__item">
           <a class="projects__card" href="">
-            <img src="" alt="project illustration">
-            <h3>Projet 1</h3>
+            <img class="projects__illustration" src="images/blog.png" alt="project illustration">
+            <h3 class="projects__title">Projet 1</h3>
           </a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est facilis odit nobis id dolor ducimus numquam at, tenetur nisi, quasi sequi in debitis? Assumenda laudantium eos amet aperiam incidunt.</p>
+          <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est facilis odit nobis id dolor ducimus numquam at, tenetur nisi, quasi sequi in debitis? Assumenda laudantium eos amet aperiam incidunt.</p>
         </div>
-        <div class="projects_item">
-          <a class="projects_card" href="">
-            <img src="" alt="project illustration">
-            <h3>Projet 2</h3>
+        <div class="projects__item">
+          <a class="projects__card" href="">
+            <img class="projects__illustration" src="images/fleuriste.png" alt="project illustration">
+            <h3 class="projects__title">Projet 2</h3>
           </a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est facilis odit nobis id dolor ducimus numquam at, tenetur nisi, quasi sequi in debitis? Assumenda laudantium eos amet aperiam incidunt.</p>
+          <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est facilis odit nobis id dolor ducimus numquam at, tenetur nisi, quasi sequi in debitis? Assumenda laudantium eos amet aperiam incidunt.</p>
         </div>
       </div>
     </section>
     <section id="links" class="section links">
       <h2 class="section-title">Liens</h2>
       <div class="links__elements">
-        <a href="">Logo Github</a>
-        <a href="">Logo Linkedin</a>
+        <a class="links__item" href=""><i class="fa-brands fa-github"></i></a>
+        <a class="links__item" href=""><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </section>
   </main>
 </body>
+
+<script src="https://kit.fontawesome.com/9e17f7864d.js" crossorigin="anonymous"></script>
 </html>
