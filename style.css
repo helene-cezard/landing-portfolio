@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #F72585;
+  color: white;
+}
+
+.section {
+  padding: 1rem 0 2rem 0;
+}
+
+.section > * {
+  width: 90%;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.section:nth-child(odd) {
+  background-color: #3A0CA3;
+  color: white;
+}
+
+.section:nth-child(even) {
+  background-color: #4CC9F0;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.navbar > * {
+  padding: .5rem;
+}
+
+.navbar a {
+  text-decoration-line: none;
+  color: white;
+}
+
+.navbar a:visited {
+  color: white;
+}
+
+.photo {
+  width: 70%;
+  display: block;
+  margin: 1rem auto 1rem auto;
+  border-radius: 50%;
+}
