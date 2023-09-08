@@ -7,6 +7,50 @@ header {
   text-align: center;
   background-color: #F72585;
   color: white;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.burger-icon {
+  font-size: 4rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+.navbar {
+  display: none;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+#toggle:checked + .navbar {
+  display: block;
+}
+
+.navbar > * {
+  padding: .5rem;
+}
+
+.navbar__links {
+  text-decoration-line: none;
+  color: white;
+}
+
+.navbar__links:visited {
+  color: white;
+}
+
+main {
+  margin-top: 6rem;
+}
+
+#introduction, #about, #journey, #projects, #links {
+  scroll-margin-top: 6rem;
 }
 
 .section {
@@ -36,24 +80,6 @@ header {
 .section:first-child {
   background-color: white;
   color: black;
-}
-
-.navbar {
-  font-size: 1.2rem;
-  margin: auto;
-}
-
-.navbar > * {
-  padding: .5rem;
-}
-
-.navbar__links {
-  text-decoration-line: none;
-  color: white;
-}
-
-.navbar__links:visited {
-  color: white;
 }
 
 .introduction {
@@ -159,10 +185,18 @@ header {
 
 /* Media queries ! */
 
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
   header {
     display: flex;
     justify-content: space-between;
+    /* position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%; */
+  }
+
+  .burger-icon {
+    display: none;
   }
   
   .navbar {
@@ -171,8 +205,16 @@ header {
     justify-content: space-evenly;
   }
 
+  main {
+    margin-top: 4.1rem;
+  }
+
   .section  > * {
     width: 50%;
+  }
+
+  #introduction, #about, #journey, #projects, #links {
+    scroll-margin-top: 4.1rem;
   }
 
   .introduction__content {
