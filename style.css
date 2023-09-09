@@ -14,11 +14,13 @@ header {
 }
 .burger-icon {
   font-size: 4rem;
-  padding: 2rem;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
 }
 
-#toggle {
+.closeIcon {
   display: none;
 }
 
@@ -28,7 +30,7 @@ header {
   margin: auto;
 }
 
-#toggle:checked + .navbar {
+.shownav {
   display: block;
 }
 
@@ -189,10 +191,6 @@ main {
   header {
     display: flex;
     justify-content: space-between;
-    /* position: fixed;
-    top: 0;
-    overflow: hidden;
-    width: 100%; */
   }
 
   .burger-icon {
