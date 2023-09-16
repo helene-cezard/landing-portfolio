@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  line-height: 1.2rem;
 }
 
 header {
@@ -140,6 +141,11 @@ main {
   font-weight: bold;
 }
 
+.journey__link {
+  color: white;
+  text-decoration: none;
+}
+
 .projects__item {
   text-align: center;
   display: flex;
@@ -259,6 +265,7 @@ main {
 
   .about__content {
     text-align: justify;
+    /* line-height: 1.2rem; */
   }
 
   .journey__content {
@@ -273,6 +280,10 @@ main {
   .journey__card {
     width: 40%;
     margin: 1rem 0;
+  }
+
+  .journey__link:hover {
+    color: #4CC9F0;
   }
 
   .projects__item {
