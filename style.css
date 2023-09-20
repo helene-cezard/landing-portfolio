@@ -1,6 +1,5 @@
 body {
   font-family: sans-serif;
-  line-height: 1.2rem;
 }
 
 header {
@@ -54,6 +53,10 @@ main {
 
 #introduction, #about, #journey, #projects, #links {
   scroll-margin-top: 6rem;
+}
+
+.about__content, .journey__card, .projects__description {
+    line-height: 1.2rem;
 }
 
 .section {
