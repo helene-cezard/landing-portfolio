@@ -1,23 +1,30 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 1.2rem;
+}
+
 body {
   font-family: sans-serif;
 }
 
-header {
-  padding: 1rem;
-  text-align: center;
+nav {
+  padding: 1rem 0;
+  text-align: right;
   background-color: #F72585;
   color: white;
   position: fixed;
   top: 0;
   overflow: hidden;
   width: 100%;
+  z-index: 1;
 }
 .burger-icon {
-  font-size: 4rem;
+  font-size: 2rem;
   cursor: pointer;
   border: none;
   background-color: transparent;
   color: white;
+  padding: 0 1.5rem;
 }
 
 .closeIcon {
@@ -55,7 +62,12 @@ main {
   scroll-margin-top: 6rem;
 }
 
-.about__content, .journey__card, .projects__description {
+.about__content, .projects__description {
+  line-height: 2rem;
+  margin: 1rem;
+}
+
+.journey__card {
     line-height: 1.2rem;
 }
 
@@ -65,7 +77,8 @@ main {
 
 .section > * {
   width: 70%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-title {
@@ -160,16 +173,23 @@ main {
   width: 90%;
   height: fit-content;
   margin: auto;
-  border: #7209B7 1px solid;
+  /* border: white 1px solid; */
   border-radius: 4px;
-  background-color: #7209B7;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
   text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+/* background-color: #7209B7; */
+
+.projects__card:hover {
+  transform: scale(1.1);
 }
 
 .projects__title {
   padding: .5rem;
+  /* border-top: black 1px solid; */
 }
 
 .projects__illustration {
@@ -197,7 +217,7 @@ main {
 /* Media queries ! */
 
 @media (min-width: 1000px) {
-  header {
+  nav {
     display: flex;
     justify-content: space-between;
   }
@@ -207,6 +227,7 @@ main {
   }
   
   .navbar {
+    text-align: center;
     display: flex;
     width: 50%;
     justify-content: space-evenly;
@@ -217,7 +238,7 @@ main {
   }
 
   .section  > * {
-    width: 50%;
+    width: 60%;
   }
 
   #introduction, #about, #journey, #projects, #links {
